@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Movies</h1>
+<h1 id='movie-masthead'>Movies</h1>
 
     <% @movies.each do |movie| %>
 <div class="card mb-3">
@@ -10,6 +10,7 @@
     <p class="card-text">Genre: <%= movie.genre %></p>
     <p class="card-text">Actor: <%= movie.actor %></p>
     <p class="card-text">Rating: <%= movie.rating %></p>
+    <p class="card-text"><%= link_to "Watch Trailer", movie.trailers_url %></p>
     <p class="card-text"><small class="text-muted">Updated by Jamie</small></p>
     <%= link_to 'Edit', edit_movie_path(movie), class: 'btn btn-secondary' %>
     <%= link_to 'Delete', movie, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-secondary' %>
