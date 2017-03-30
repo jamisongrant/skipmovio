@@ -34,7 +34,6 @@ body {
   color: black;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-  background-color: #7F007F;
 }
 
 h1, .h1,
@@ -230,7 +229,6 @@ h6, .h6 {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: image-url('home_bg.jpeg') no-repeat;
     background-size: cover;
  }
  .app-footer {
