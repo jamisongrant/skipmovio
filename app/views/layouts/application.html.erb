@@ -12,21 +12,15 @@
     <![endif]-->
   </head>
   <body>
-
-      <h3 class="masthead-brand">Skip Movio</h3>
-
-        <div><%= link_to "Home", root_path, id: "logo" %></div>
-        <div><%= link_to "Contact",   'contact' %></div>
-        <div><%= link_to "Movie",   movies_path %></div>
-        <div><%= link_to "Log In if I get to it", '#' %></div>
-      </nav>
-    </div>
-  </div>
-
-
+    <ul>
+      <p><img src="../images/skipio-logo.png"
+      <h3 class='site-head'>Skip Movio</h3>
+      <div><%= link_to "Home", root_path, id: "logo" %></div>
+      <div><%= link_to "Contact",   'contact' %></div>
+      <div><%= link_to "Movie",   movies_path %></div>
+      <div><%= link_to "Log In if I get to it", '#' %></div>
+    </ul>
     <%= yield %>
 
   </body>
 </html>
-
-

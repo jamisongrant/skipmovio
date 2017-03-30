@@ -32,8 +32,9 @@ body {
 body {
   font-family: 'Droid Sans Mono', monospace;
   color: black;
-  text-align: center;
+  /*text-align: center;*/
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  background-color: orange;
 }
 
 h1, .h1,
@@ -45,10 +46,6 @@ h6, .h6 {
   font-family: 'Francois One', sans-serif;
   font-weight: normal;
   color: black;
-}
-
-.login h2{
-  color: #333;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -207,12 +204,6 @@ h6, .h6 {
  }
 
 
- .login > .card {
-    width: 22rem;
-    margin: 0 auto;
-    float: none;
- }
-
  .app-nav span {
     margin-right: 15px;
     margin-left: 15px;
@@ -234,57 +225,6 @@ h6, .h6 {
  .app-footer {
   color:black;
  }
-
-.tech-news {
-  color: black;
-  margin: 20px;
-}
-
-.tech-news a {
-  color: #30BCBFFF;
-
-}
-
-.tech-news > .card {
-  padding: 30px;
-}
-
-.app-card-container {
-  color: black;
-  text-align: left;
-}
-
-.app-card-container > .card {
-  padding: 40px;
-  border-radius: 5%;
-  background-color: rgba(255,255,255,.85);
-}
-
-.profile-img {
-  border: 1px solid grey;
-}
-
-.app-card-container a {
-  color: blue;
-}
-
-.card-block {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.skill {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.cover-heading {
-  color: black;
-}
-
-#contact-info {
-  padding-left: 250px;
-}
-
-#about-me {
-  color: #333;
+#site-head {
+  left: 50%;
 }
