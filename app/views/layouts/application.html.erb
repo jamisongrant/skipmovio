@@ -2,30 +2,21 @@
 <html>
   <head>
     <title>Skip Movio</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all',
-                                              'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-      </script>
-    <![endif]-->
   </head>
+          <%= render 'shared/nav' %>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "Home", root_path, id: "logo" %>
-        <nav>
-          <div class="nav navbar-nav navbar-right">
-            <div><%= link_to "Contact",   'contact' %></div>
-            <div><%= link_to "Movie",   movies_path %></div>
-            <div><%= link_to "Log In if I get to it", '#' %></div>
-          </div>
-        </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <%= yield %>
       </div>
-    </header>
-    <div class="container">
-      <%= yield %>
     </div>
+  </div>
+  
   </body>
 </html>

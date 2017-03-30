@@ -3,6 +3,6 @@
     title: "Lord of the Rings #{movie}",
     genre: "Great Genre",
     actor: "Hobbit",
-    rating: "R"
+    rating: "PG 13"
   )
 end
